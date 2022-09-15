@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
+        <Setter Property="FontFamily" Value="HelveticaNeueRegular" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal" />
+                    <VisualState x:Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Label" Class="Tiny">
+        <Setter Property="FontSize" Value="10" />
+    </Style>
+    <Style TargetType="Label" Class="Small">
+        <Setter Property="FontSize" Value="12" />
+    </Style>
+    <Style TargetType="Label" Class="Normal">
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+    <Style TargetType="Label" Class="Large">
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+    <Style TargetType="Label" Class="Big">
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+    <Style TargetType="Label" Class="Title">
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+
+
+
+    <Style TargetType="Label" Class="Bold">
+        <Setter Property="FontFamily" Value="HelveticaNeueBold" />
+    </Style>
+    <Style TargetType="Label" Class="Regular">
+        <Setter Property="FontFamily" Value="HelveticaNeueRegular" />
+    </Style>
+    <Style TargetType="Label" Class="Thin">
+        <Setter Property="FontFamily" Value="HelveticaNeueThin" />
+    </Style>
+
+
+
+    <Style TargetType="Label" Class="Dark">
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
+    </Style>
+    <Style TargetType="Label" Class="Black">
+        <Setter Property="TextColor" Value="{StaticResource Gray900}" />
+    </Style>
+    <Style TargetType="Label" Class="Gray">
+        <Setter Property="TextColor" Value="{StaticResource Gray300}" />
+    </Style>
+    <Style TargetType="Label" Class="White">
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+    </Style>
+    <Style TargetType="Label" Class="Blue">
+        <Setter Property="TextColor" Value="{StaticResource Blue}" />
+    </Style>
+    <Style TargetType="Label" Class="Red">
+        <Setter Property="TextColor" Value="{StaticResource Red}" />
+    </Style>
+
+</ResourceDictionary>

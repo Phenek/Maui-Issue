@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CareProTech.AppShell"
+    x:DataType="Shell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:CareProTech.Views"
+    TabBarIsVisible="False"
+    FlyoutHeaderBehavior="Fixed"
+    Shell.FlyoutBehavior="Locked"
+    Shell.NavBarIsVisible="False"
+    Shell.NavBarHasShadow="False"
+    FlyoutWidth="300">
+
+    <Shell.FlyoutHeader>
+        <views:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <views:FlyoutItem/>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        
+        <!--
+        Shell has implicit conversion operators that enable the Shell visual hierarchy to be simplified.
+        This is possible because a subclassed Shell object can only ever contain a FlyoutItem object or a TabBar object,
+        which can only ever contain Tab objects, which can only ever contain ShellContent objects.
+
+        The implicit conversion automatically wraps the ShellContent objects below in Tab objects.
+        -->
+        <ShellContent Title="Dashboard"
+                      Icon="menu_dashboard.png"
+                      ContentTemplate="{DataTemplate views:MainPage}" />
+        <ShellContent Title="Alerts"
+                      Icon="menu_alert.png"
+                      ContentTemplate="{DataTemplate views:MainPage2}" />
+        <ShellContent Title="Patients"
+                      Icon="menu_patient.png"
+                      ContentTemplate="{DataTemplate views:MainPage3}" />
+    </FlyoutItem>
+
+</Shell>
