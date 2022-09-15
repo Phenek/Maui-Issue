@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{7D295DA3-66CB-43FE-9D53-07D2C682AF76}|Default">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.HA1NF8DF" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vice/Desktop/Maui-Issue/App/App/MainPage2.xaml" relfile="App/MainPage2.xaml" line="34" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="App/MainPage.xaml">
+    <Files>
+      <File FileName="App/MainPage.xaml" Line="16" Column="1" />
+      <File FileName="App/MainPage.xaml.cs" Line="14" Column="81" />
+      <File FileName="App/MauiProgram.cs" Line="1" Column="1" />
+      <File FileName="App/AppShell.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="App" expanded="True">
+            <Node name="App" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.App PreferredExecutionTarget="Android.HA1NF8DF" />
+</Properties>

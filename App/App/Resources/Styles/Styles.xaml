@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="Border" Class="BorderStyle"
+           ApplyToDerivedTypes="true">
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="State1">
+                        <VisualState.Setters>
+                            <Setter Property="Background"
+                                            Value="Blue" />
+                            <Setter Property="Stroke"
+                                            Value="Red" />
+                            <Setter Property="StrokeShape"
+                                            Value="RoundRectangle 10,10,10,10" />
+                            <Setter Property="StrokeThickness"
+                                            Value="2" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="State2">
+                        <VisualState.Setters>
+                            <Setter Property="Background"
+                                            Value="NavajoWhite" />
+                            <Setter Property="Stroke"
+                                            Value="Blue" />
+                            <Setter Property="StrokeShape"
+                                            Value="RoundRectangle 0,0,10,10" />
+                            <Setter Property="StrokeThickness"
+                                            Value="4" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="State3">
+                        <VisualState.Setters>
+                            <Setter Property="Background"
+                                            Value="Green" />
+                            <Setter Property="Stroke"
+                                            Value="Red" />
+                            <Setter Property="StrokeShape"
+                                            Value="RoundRectangle 20,0,0,10" />
+                            <Setter Property="StrokeThickness"
+                                            Value="1" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="State4">
+                        <VisualState.Setters>
+                            <Setter Property="Background"
+                                            Value="Brown" />
+                            <Setter Property="Stroke"
+                                            Value="Yellow" />
+                            <Setter Property="StrokeShape"
+                                            Value="RoundRectangle 20,20,20,20" />
+                            <Setter Property="StrokeThickness"
+                                            Value="4" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+</ResourceDictionary>
